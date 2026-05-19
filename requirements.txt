@@ -3,14 +3,9 @@ uvicorn[standard]==0.30.1
 python-multipart==0.0.9
 pydantic==2.7.4
  
-# Force headless OpenCV BEFORE mediapipe installs its own opencv
-opencv-python-headless==4.10.0.84
- 
-# AI / ML
+# AI inference only — no OpenCV, no MediaPipe (landmarks come from browser)
 tensorflow-cpu==2.16.1
-mediapipe==0.10.14
 numpy==1.26.4
-Pillow==10.3.0
  
 # Firebase Admin
 firebase-admin==6.5.0
